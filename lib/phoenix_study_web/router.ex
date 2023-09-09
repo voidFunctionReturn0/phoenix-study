@@ -18,8 +18,8 @@ defmodule PhoenixStudyWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/log-in", LogInController, :index
-    get "/log-in/:messenger", LogInController, :show
+    get "/login", MemberController, :log_in
+    get "/signup", MemberController, :new
   end
 
   # Other scopes may use custom stacks.
