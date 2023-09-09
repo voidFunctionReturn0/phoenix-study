@@ -1,3 +1,19 @@
-<section>
-    <h2>Hello World, from Phoenix!</h2>
-</section>
+<div class="flex flex-col justify-center items-center w-screen h-screen">
+    <div class="flex items-center gap-2">
+        <img src={~p"/images/phoenix.png"} width="80" />
+        <span class="text-3xl">
+            Phoenix Study
+        </span>
+    </div>
+    <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center p-5 gap-4">
+            <input type="text" name="email" placeholder="이메일">
+            <input type="text" name="email" placeholder="비밀번호">
+            <button>로그인</button>
+        </div>
+        <div class="flex gap-7">
+            <button class="text-sm">비밀번호 찾기</button>
+            <button class="text-sm">회원가입</button>
+        </div>
+    </div>
+</div>

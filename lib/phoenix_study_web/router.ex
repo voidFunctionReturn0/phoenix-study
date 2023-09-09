@@ -19,6 +19,7 @@ defmodule PhoenixStudyWeb.Router do
 
     get "/", PageController, :home
     get "/log-in", LogInController, :index
+    get "/log-in/:messenger", LogInController, :show
   end
 
   # Other scopes may use custom stacks.
